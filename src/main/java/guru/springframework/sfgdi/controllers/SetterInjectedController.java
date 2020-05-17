@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class SetterInjectionController {
+public class SetterInjectedController {
 
     private GreetingService greetingService;
 
@@ -14,7 +14,7 @@ public class SetterInjectionController {
         this.greetingService = greetingService;
     }
 
-    public String getGreeting() {
+    public String getGreeting(){
         return greetingService.sayGreeting();
     }
 }
